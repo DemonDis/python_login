@@ -10,4 +10,4 @@ def index(username):
     return "Hello, %s!" % username
 
 if __name__ == "__main__":
-    app.run(host=HOST, port=PORT_HTTP)
+    app.run(debug=True, host=HOST, port=PORT_HTTP)

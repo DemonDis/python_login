@@ -4,15 +4,7 @@
 ```
 # Создаем страницу Login
 ├── 📁 back/        # python
+├── 📁 db/          # PostgreSQL
 ├── 📁 front/       # next js
 └──  ...            #
-```
-
-## PostgreSQL
-```sql
-CREATE TABLE drafts (
-  name VARCHAR(255),
-  id VARCHAR(255),
-  date VARCHAR(255)
-); 
 ```
