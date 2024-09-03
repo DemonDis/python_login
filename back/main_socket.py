@@ -1,4 +1,3 @@
-import os
 import websockets
 import json
 import random
@@ -6,13 +5,7 @@ import asyncio
 
 from src.static.request import REQUEST_SEND, REQUEST_SEND_ERROR
 from src.static.answers import ANSWERS
-
-from dotenv import load_dotenv
-
-load_dotenv()
-
-HOST = os.getenv("HOST")
-PORT = os.getenv("PORT_SOCKER")
+from src.static.env import *
 
 async def handler(websocket):
     async for message in websocket:
@@ -37,7 +30,7 @@ async def handler(websocket):
         except Exception as e:            
             print('⚠️Exception⚠️', e)
 async def main():
-    async with websockets.serve(handler, HOST, PORT):
+    async with websockets.serve(handler, HOST, PORT_SOCKET):
         await asyncio.Future()
 
 if __name__ == "__main__":

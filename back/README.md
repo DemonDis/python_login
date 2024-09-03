@@ -2,9 +2,15 @@
 
 ## Structure
 ```
-# 
-├── 📁 back/        # python
-└──  ...                            #
+📁 back/ 
+├── 📁 .venv/               # 
+├── 📁 src/                 # 
+├── 📜 .gitignore           # 
+├── 🐍 main_http.py         # 
+├── 🐍 main_socket.py       # 
+├── 📃 README.md            # 
+├── 📜 requirements.txt     # 
+└──  ...                    #
 ```
 
 ### Python venv
@@ -22,8 +28,7 @@ python main.py
 ## Server/Client socket
 
 ### Technology stack back
-- **Lang**: python 3.10.13
-
+- **Lang**: Python 3.12.5
 
 ### URL Info
 
