@@ -33,3 +33,5 @@ python main.py
 ### URL Info
 
 1. [Структура каталогов для проекта (в частности на Flask)](https://habr.com/ru/articles/421887/)  
+2. [When and How to Use Psycopg2](https://www.timescale.com/blog/when-and-how-to-use-psycopg2/)  
+3. [PostgreSQL connect test.py](https://gist.github.com/DaWe35/29ee520adf02788ed71c777494401197#file-postgresql-connect-test-py)  
