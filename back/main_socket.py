@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 HOST = os.getenv("HOST")
-PORT = os.getenv("PORT")
+PORT = os.getenv("PORT_SOCKER")
 
 async def handler(websocket):
     async for message in websocket:
@@ -42,11 +42,3 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
-
-
-# @app.route("/", methods=['GET'])
-# def index(username):
-#     return "Hello, %s!" % username
-
-# if __name__ == "__main__":
-#     app.run(host='0.0.0.0', port=4567)

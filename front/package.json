@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next dev -p 3000",
+    "build": "next build"
   },
   "dependencies": {
+    "effector": "^23.2.2",
+    "effector-logger": "^0.15.0",
+    "effector-react": "^23.2.1",
     "next": "14.2.6",
     "react": "^18",
     "react-dom": "^18",

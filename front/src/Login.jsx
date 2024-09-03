@@ -16,7 +16,7 @@ const question_error = {
     'question': '⚡Ударила молния⚡'
   }
 };
-const websocket = new WebSocket("ws://127.0.0.1:4005/");
+const websocket = new WebSocket("ws://127.0.0.1:4004/");
 
 export const Login = () => {
   
