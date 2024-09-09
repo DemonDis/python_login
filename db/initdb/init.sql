@@ -1,6 +1,5 @@
 CREATE TABLE draft
 (
-    -- draft_id SERIAL PRIMARY KEY,
     draft_id   VARCHAR(50),
     draft_name  VARCHAR(50),
     draft_date  VARCHAR(50)

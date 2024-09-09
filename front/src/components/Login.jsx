@@ -1,5 +1,6 @@
 'use client';
 import React from "react";
+import { Button } from 'primereact/button';
 import { v4 as uuidv4 } from 'uuid';
 
 const question = {
@@ -29,8 +30,8 @@ export const Login = () => {
   
   return (
     <div>
-        <button onClick={() => onSendMessage()}>SOCKET</button>
-        <button onClick={() => onSendMessageError()}>SOCKET ERROR</button>
+        <Button onClick={() => onSendMessage()}>SOCKET</Button>
+        <Button onClick={() => onSendMessageError()}>SOCKET ERROR</Button>
     </div>
   );
 }
