@@ -2,22 +2,15 @@
 import React, { useState, useEffect } from 'react';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
-import { ProductService } from './service/ProductService';
 
-export const TableDratft = () => {
-    const [products, setProducts] = useState([]);
-
-    useEffect(() => {
-        ProductService.getProductsMini().then(data => setProducts(data));
-    }, []);
+export const Table = () => {
 
     return (
         <div className="card">
-            <DataTable value={products} tableStyle={{ minWidth: '50rem' }}>
-                <Column field="code" header="Code"></Column>
-                <Column field="name" header="Name"></Column>
-                <Column field="category" header="Category"></Column>
-                <Column field="quantity" header="Quantity"></Column>
+            <DataTable value={[{'darft_id': 'ss'}]} tableStyle={{ minWidth: '50rem' }}>
+                <Column field="darft_id" header="darft_id"></Column>
+                <Column field="darft_name" header="darft_name"></Column>
+                <Column field="darft_date" header="darft_date"></Column>
             </DataTable>
         </div>
     );
