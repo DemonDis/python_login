@@ -6,22 +6,24 @@ const nextConfig = {
     // },
     distDir: 'templates',
     swcMinify: true,
-    assetPrefix: ".",
-    basePath:'',
+    // assetPrefix: "./",
     trailingSlash: true,
     output: 'export',
-    // experimental: {
-    //     appDir: true,
+    // basePath: '/static',
+    // distDir: 'build',
+    // rewrites() {
+    //     return [
+    //       { source: '/_next/:path*', destination: '/next/:path*' }
+    //     ]
     // },
-    // outputFileTracingExcludes: {
-    //     '/api/hello': ['./un-necessary-folder/**/*'],
-    //   },
-    //   outputFileTracingIncludes: {
-    //     '/api/another': ['./necessary-folder/**/*'],
-    //     '/api/login/\\[\\[\\.\\.\\.slug\\]\\]': [
-    //       './node_modules/aws-crt/dist/bin/**/*',
-    //     ],
-    //   }
+    generateBuildId: async () => {
+      if (process.env.BUILD_ID) {
+        return process.env.BUILD_ID;
+      } else {
+        return `${new Date().getTime()}`;
+      }
+    },
+    
 };
 
 export default nextConfig;
